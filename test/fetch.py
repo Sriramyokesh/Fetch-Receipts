@@ -5,10 +5,9 @@ from post_payload import post1, post2
 
 POST_ENDPOINT = "http://127.0.0.1:5000/receipts/process"
 GET_ENDPOINT = "http://127.0.0.1:5000/receipts/{0}/points"
-post_res1 = "0"
-post_res2 = "0"
+post_res1 = {'id': float.inf}
+post_res2 = {'id': float.inf}
 
-ids = []
 try: 
 	post_res1 = requests.post(url=POST_ENDPOINT, data=json.dumps(post1), headers = {"Content-Type": "application/json"})
 	post_res2 = requests.post(url=POST_ENDPOINT, data=json.dumps(post2), headers = {"Content-Type": "application/json"})
