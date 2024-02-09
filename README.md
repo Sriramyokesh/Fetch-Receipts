@@ -32,7 +32,8 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/6a63596f-9108-4788-b0f2-975c0e0b53bb)
 
-1. We can use either /test/fetch.py (In a python 3 environment run, pip install requests followed by python fetch.py) (or)
+1. We can use either /test/fetch.py (In a python 3 environment run, pip install requests followed by python fetch.py)
+(or)
 2. Use Postman tool as follows:
 
 ### POST
@@ -49,9 +50,12 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 Remove-item alias:curl (For Windows)
 curl -X GET "http://127.0.0.1:5000/receipts/{id}/points" (Replace with id)
 curl --header "Content-Type:application/json" --request POST --data '{\"retailer\":\"M&M Corner Market\",\"purchaseDate\":\"2022-03-20\",\"purchaseTime\":\"14:33\",\"items\":[{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\"},{\"shortDescription\": \"Gatorade\",\"price\": \"2.25\" },{\"shortDescription\": \"Gatarode\",\"price\": \"2.25\" },{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\" }],\"total\": \"9.00\"}' "http://127.0.0.1:5000/receipts/process"
-![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/ff544d82-d524-46c3-86f8-a7990e6c0ff9)
 
 ```
+![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/ff544d82-d524-46c3-86f8-a7990e6c0ff9)
+
 (or)
 4. Use similar API callers in any programming language
+
+
 
