@@ -43,6 +43,15 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/5f5e2761-175f-4265-863f-9a76d0e1b95a)
 
 (or)
-3. Use curl or some other means of communicating with the API
+3. Use curl, 
 
+```
+Remove-item alias:curl (For Windows)
+curl -X GET "http://127.0.0.1:5000/receipts/{id}/points" (Replace with id)
+curl --header "Content-Type:application/json" --request POST --data '{\"retailer\":\"M&M Corner Market\",\"purchaseDate\":\"2022-03-20\",\"purchaseTime\":\"14:33\",\"items\":[{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\"},{\"shortDescription\": \"Gatorade\",\"price\": \"2.25\" },{\"shortDescription\": \"Gatarode\",\"price\": \"2.25\" },{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\" }],\"total\": \"9.00\"}' "http://127.0.0.1:5000/receipts/process"
+![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/ff544d82-d524-46c3-86f8-a7990e6c0ff9)
+
+```
+(or)
+4. Use similar API callers in any programming language
 
