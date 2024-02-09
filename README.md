@@ -10,7 +10,7 @@ docker build -t receiptapp .
 docker run -p 5000:5000 receiptapp
 ```
 
-Now, run http://127.0.0.1:5000/ to connect to the API.
+Now, run http://127.0.0.1:5000/ to connect to the API (Donot cancel this powershell/terminal/cmd until the application can be closed).
 
 You can use the fetch.py from /test/ folder or Postman or someother way to make the POST, GET calls.
 
@@ -50,10 +50,9 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 3. Use curl, 
 
 ```
-Remove-item alias:curl (For Windows)
-curl -X GET "http://127.0.0.1:5000/receipts/{id}/points" (Replace with id)
+Remove-item alias:curl (For Windows, if you get positional parameter error)
 curl --header "Content-Type:application/json" --request POST --data '{\"retailer\":\"M&M Corner Market\",\"purchaseDate\":\"2022-03-20\",\"purchaseTime\":\"14:33\",\"items\":[{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\"},{\"shortDescription\": \"Gatorade\",\"price\": \"2.25\" },{\"shortDescription\": \"Gatarode\",\"price\": \"2.25\" },{\"shortDescription\":\"Gatorade\",\"price\": \"2.25\" }],\"total\": \"9.00\"}' "http://127.0.0.1:5000/receipts/process"
-
+curl -X GET "http://127.0.0.1:5000/receipts/{id}/points" (Replace with id)
 ```
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/ff544d82-d524-46c3-86f8-a7990e6c0ff9)
 
