@@ -33,7 +33,9 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/6a63596f-9108-4788-b0f2-975c0e0b53bb)
 
 1. We can use either /test/fetch.py (In a python 3 environment run, pip install requests followed by python fetch.py)
+
 (or)
+
 2. Use Postman tool as follows:
 
 ### POST
@@ -44,6 +46,7 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/5f5e2761-175f-4265-863f-9a76d0e1b95a)
 
 (or)
+
 3. Use curl, 
 
 ```
@@ -55,6 +58,7 @@ curl --header "Content-Type:application/json" --request POST --data '{\"retailer
 ![image](https://github.com/Sriramyokesh/Fetch-Receipts/assets/24229318/ff544d82-d524-46c3-86f8-a7990e6c0ff9)
 
 (or)
+
 4. Use similar API callers in any programming language
 
 
