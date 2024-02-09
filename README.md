@@ -34,6 +34,8 @@ The server is now ready to accept requests on http://127.0.0.1:5000/
 
 1. We can use either /test/fetch.py (In a python 3 environment run, pip install requests followed by python fetch.py)
 
+You can replace /test/post_payload.py with additional payloads and iterate all payloads in fetch.py
+
 (or)
 
 2. Use Postman tool as follows:
