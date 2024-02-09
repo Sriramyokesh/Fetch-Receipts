@@ -2,7 +2,7 @@
 
 ## Running
 
-Clone the project and get into ./Fetch-Receipts/src/ folder.
+Clone the project https://github.com/Sriramyokesh/Fetch-Receipts and get into ./Fetch-Receipts/src/ folder.
 Run the following commands (Keep Docker daemon running):
 
 ```
