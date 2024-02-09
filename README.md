@@ -1,5 +1,7 @@
 # Fetch-Receipts
 
+### Reach out to me at esriram.me@gmail.com if there are any issues.
+
 ## Running
 
 Clone the project https://github.com/Sriramyokesh/Fetch-Receipts and get into ./Fetch-Receipts/src/ folder.
